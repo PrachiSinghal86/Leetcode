@@ -1,5 +1,5 @@
 class Solution:
-    def generate(self, A: int) -> List[List[int]]:
+    def generate(self, A: int):
         
         pt=[]
         if(A==0):
