@@ -16,9 +16,11 @@ public:
         if(root==NULL)
             return;
         inorder(root->left,prev);
-        prev->left=NULL;
+        
         prev->right=root;
+	
         prev=root;
+	prev->left=NULL;
         inorder(root->right,prev);
     }
     TreeNode* increasingBST(TreeNode* root) {
